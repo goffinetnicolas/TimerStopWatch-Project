@@ -37,10 +37,9 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: https://sonarcloud.io/project/overview?id=goffinetnicolas_TimerStopWatch-Project
       run: >
-       mvn −B verify org.sonarsource.scanner.maven:sonar−maven−plugin:sonar 
-       − Dsonar.host.url=https://sonarcloud.io
-       − Dsonar.organization=goffinetnicolas
-       − Dsonar.projectKey=goffinetnicolas_TimerStopWatch-Project
-       − Dsonar.branch.name=main
-       − Dsonar.login=$SONARTOKEN
-        
+       mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar 
+       - Dsonar.host.url=https://sonarcloud.io
+       - Dsonar.organization=goffinetnicolas
+       - Dsonar.projectKey=goffinetnicolas_TimerStopWatch-Project
+       - Dsonar.branch.name=main
+       - Dsonar.login=$SONARTOKEN
