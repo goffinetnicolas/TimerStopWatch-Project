@@ -42,4 +42,4 @@ jobs:
        - Dsonar.organization=goffinetnicolas
        - Dsonar.projectKey=goffinetnicolas_TimerStopWatch-Project
        - Dsonar.branch.name=main
-       - Dsonar.login=$SONARTOKEN
+       - Dsonar.login=$SONAR_TOKEN
